@@ -1,0 +1,83 @@
+
+h1{
+  background-color: #38393899;
+  color: #f7f2f2 !important;
+  box-shadow: #3839381c;
+
+}
+
+
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+
+body {
+  max-width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: sans-serif;
+  /* background-image: linear-gradient(to top, #cfd9df 0%, #e2ebf0 100%); */
+  background-image: url('./image/code-113611_1280.webp');
+}
+
+.calculatrice {
+  background-color: #383938;
+  display: flex;
+  flex-direction: column;
+  padding: 15px;
+  border-radius: 5px;
+  box-shadow: 0 5px rgb(0, 0, 0) ;
+}
+
+.ecran {
+  width: 100%;
+  height: 100px;
+  background-color: rgb(18, 209, 226);
+  margin-bottom: 10px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  padding: 5px;
+  font-size: 40px;
+}
+ 
+.touches{
+    display: grid;
+    grid-template-columns: repeat(4, 50px);
+    grid-template-rows: repeat(5, 50PX);
+    grid-gap: 7px;
+}
+
+.bouton{
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    background-color: #f7f7f7;
+    box-shadow: 0 3px gray;
+    font-size: 18px;
+}
+
+.bouton:active{
+    box-shadow: 0 1px #a8a8a8;
+    transform: translateY(2px);
+}
+.bouton[data-key="8"]{
+    background-color: #ff9900;
+    font-weight: bold;
+    color: white;
+}
+.bouton[data-key="13"]{
+    grid-column: SPAN 2;
+    background-color: #f91edc;
+    font-weight: bold;
+    color: white;
+    font-size: 35px;
+}
